@@ -1,0 +1,31 @@
+/* Main SCSS file where all partials are imported. */
+
+@import 'default';
+@import 'footer';
+@import 'nav';
+@import 'libresignage/ui/components/Dialog/css/Dialog.scss';
+@import 'libresignage/ui/components/MultiSelect/css/MultiSelect.scss';
+@import 'libresignage/ui/components/DropSelect/css/DropSelect.scss';
+@import 'libresignage/ui/components/DropConfirm/css/DropConfirm.scss';
+@import 'libresignage/ui/components/Popup/css/Popup.scss';
+
+@import 'timeline';
+@import 'preview';
+@import 'quick_help';
+@import 'asset_uploader';
+@import 'queueselector';
+@import 'buttons';
+@import 'editor';
+@import 'controls';
+
+$main-col-minw: 250px; // Main column min width.
+
+html, body {
+	transition: all .5s;
+	min-height: 100%;
+}
+
+#editor-col-l, #editor-col-r {
+	min-width: $main-col-minw;
+}
+
