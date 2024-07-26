@@ -44,6 +44,7 @@ return [
 	'ERROR_PAGES'           => "/public/errors",
 	'LOGIN_LANDING'         => "/control",
 	'LOGOUT_LANDING'        => "/logout",
+	'CCTV_PAGE'             => "/control/cctv",
 
 	// Permanent cookie expiration on Tuesday, 19-Jan-2038 03:14:07 UTC
 	'PERMACOOKIE_EXPIRE'    => 2147483647,

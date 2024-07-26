@@ -47,6 +47,11 @@ $NAV_PAGE_LINKS = array(
 		'uri' => Config::config('DOCS_PAGE'),
 		'active' => FALSE,
 		'groups' => NULL
+	),
+		'Dashboard CCTV' => array(
+		'uri' => Config::config('CCTV_PAGE'),
+		'active' => FALSE,
+		'groups' => NULL
 	)
 );
 

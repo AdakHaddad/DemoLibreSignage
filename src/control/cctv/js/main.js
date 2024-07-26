@@ -1,11 +1,11 @@
 /**
- * @file Entry point for the Control Panel JS.
+ * @file Entry point for the CCTV dashboard page.
  */
 
 var APIInterface = require("libresignage/api/APIInterface");
 var APIErrorDialog = require("libresignage/ui/components/Dialog/APIErrorDialog");
 var Util = require("libresignage/util/Util");
-var ControlPanelView = require("./ControlPanelView.js");
+var CCTVView = require("./CCTVView.js");
 
 document.addEventListener("DOMContentLoaded", () => {
   Util.await_and_watch_for_errors(async () => {
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    let view = new ControlPanelView(API);
-  });
+    let view = new CCTVView(API);
+    await view.init();
+  }, window);
 });
